@@ -20,7 +20,7 @@ class Books extends Migration
             $schema->string('Authtor');
             $schema->string('releasedYear');
             $schema->unsignedBigInteger('userid');
-            $schema->foreign('userid')->references('id')->on('user');
+            $schema->foreign('userid')->references('id')->on('users');
         });
     }
 
